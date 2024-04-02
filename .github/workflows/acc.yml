@@ -23,7 +23,7 @@ jobs:
           python -m pip install --upgrade pip
 
       - name: Build Docker image
-        run: docker build -t acc-ecr-app .
+        run: docker build -t acc-khu .
         
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v2
