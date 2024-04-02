@@ -8,4 +8,4 @@ async def root():
 
 @app.get("/test")
 async def root():
-    return "Hello, test page"
+    return "Hello, test page!"
