@@ -37,10 +37,4 @@ jobs:
         uses: aws-actions/amazon-ecr-login@v1
 
       - name: Push Docker image to Amazon ECR
-        env:
-          REGISTRY: 286801057553.dkr.ecr.ap-northeast-2.amazonaws.com
-          REPOSITORY: acc-khu
-        run: |
-          docker push $REGISTRY/$REPOSITORY
-       
-
+        run: docker push 286801057553.dkr.ecr.ap-northeast-2.amazonaws.com/acc-khu
